@@ -1,0 +1,2 @@
+# Exclude target folder because Maven likes to bloat it.
+osswePraktikum/target/
