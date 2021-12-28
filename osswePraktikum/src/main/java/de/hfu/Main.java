@@ -1,4 +1,4 @@
-
+package de.hfu;
 import java.util.Scanner;
 import java.lang.System;
 
@@ -11,7 +11,6 @@ import java.lang.System;
 */
 
 public class Main{
-
     /* Hauptfunktion für die Main-Klasse. Auch wenn es nicht Best-Practice
     *  ist, wird in dieser Funktion alles ausgeführt, was das Programm tut,
     *  da es sich um ein simples kurzes Programm handelt.
@@ -28,6 +27,7 @@ public class Main{
         String output = input.toUpperCase();
 
         System.out.println(output);
+        scan.close();
     }
 
 }
