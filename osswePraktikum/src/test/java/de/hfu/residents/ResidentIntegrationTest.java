@@ -54,7 +54,31 @@ public class ResidentIntegrationTest {
 	
 	private BaseResidentService testService = new BaseResidentService();
 	private ResidentRepositoryStub repoStub = new ResidentRepositoryStub();
+	
+	/*
+	 * TESTS FOR getFilteredResidentsList()
+	 */
+	
+	/* Test for the getFilteredResidentsList() method.
+	 * 
+	 */
+	@Test
+	public void testGetFilteredResidentsListFail() {
+		//TODO
+	}
 
+	/* Test for getFilteredResidentsList() method.
+	 * 
+	 */
+	@Test
+	public void testGetFilteredResidentsListFailTwo() {
+		//TODO
+	}
+	
+	/*
+	 * TESTS FOR getUniqueResident()
+	 */
+	
 	/* Test for the getUniqueResident() method.
 	 * This test attempts to query a Resident with an illegal wildcard argument.
 	 * This should trigger a ResidentServiceException.
@@ -68,7 +92,7 @@ public class ResidentIntegrationTest {
 		
 		testService.setResidentRepository(repoStub);
 		
-		// This solution is not supposed to be used, but Eclipse refuses to compile unless I do it this way.
+		// This solution is not the proper way, but Eclipse refuses to compile it unless I do it this way.
 		try {
 			testService.getUniqueResident(testFilterResident);
 		} catch (ResidentServiceException rse) {
