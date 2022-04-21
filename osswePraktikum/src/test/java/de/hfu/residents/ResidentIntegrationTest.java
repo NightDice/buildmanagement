@@ -92,7 +92,8 @@ public class ResidentIntegrationTest {
 		
 		testService.setResidentRepository(repoStub);
 		
-		// This solution is not the proper way, but Eclipse refuses to compile it unless I do it this way.
+		// This solution is not the proper way to test for exceptions,
+		// but Eclipse refuses to compile it unless I do it this way.
 		try {
 			testService.getUniqueResident(testFilterResident);
 		} catch (ResidentServiceException rse) {
